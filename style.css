@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#header {
+    background-color: #74ebd5;
+    position: sticky;
+    top: 0;
+    
+}
+.navbar h2 {
+    font-size: xx-large;
+    font-weight: bold;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu li {
+    list-style: none;
+    margin: 10px;
+}
+li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+li a:hover{
+    color: whitesmoke;
+    transition: 300ms;
+}
+
+.myprofile{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+.profile-details h1 {
+    font-size: xx-large;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.8;
+}
+.profile-details h3 {
+    font-size: x-large;
+    color: white;
+    
+}
+.profile-details p {
+    font-size: 18px;
+    color: white;
+    
+}
+.profile-details ul li {
+    list-style: none;
+    font-size: 18px;
+    color: white;
+    
+}
+
+.header.container h1 {
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.git-projects{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.projects{
+    text-align: center;
+    color: white;
+    background-color: white;
+    padding: 10px;
+    width: 200px;
+}
+
+.projects a {
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.git-projects img {
+    border-bottom: 2px solid orangered;
+    width: 200px;
+    height: 200px;
+}
+.contact-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-details a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: x-large;
+}
+span i {
+    padding: 10px;
+    font-size: x-large;
+}
+
+.socialmedia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.socialmedia a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: x-large;
+}
+
+.container h1 {
+    font-size: xx-large;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.8;
+}
+.contact {
+    border: 2px solid orange;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+    .navbar{
+        flex-direction: column;
+    }
+    .myprofile{
+        flex-direction: column;
+        align-items: center;
+    }
+    .myprofile h1, h3{
+        text-align: center;
+    }
+    
+}
