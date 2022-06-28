@@ -63,7 +63,7 @@ li a:hover{
     align-items: flex-start;
     gap: 10px;
 }
-.profile-details h1 {
+.profile-details {
     font-size: xx-large;
     color: white;
     text-transform: uppercase;
@@ -86,7 +86,7 @@ li a:hover{
     
 }
 
-.header.container h1 {
+#projects h1 {
     text-align: center;
     color: white;
     font-size: xx-large;
@@ -152,7 +152,8 @@ span i {
     font-size: x-large;
 }
 
-.container h1 {
+#contact h1 {
+    text-align: center;
     font-size: xx-large;
     color: white;
     text-transform: uppercase;
@@ -180,6 +181,10 @@ span i {
     }
     .myprofile h1, h3{
         text-align: center;
+    }
+
+    .contact-details{
+        flex-direction: column;
     }
     
 }
