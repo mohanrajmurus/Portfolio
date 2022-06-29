@@ -57,6 +57,20 @@ li a:hover{
     transition: 300ms;
 }
 
+#myprofile > .container{
+    background: #364d55;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.myprofile img {
+    border-radius: 50%;
+    border: 1px solid gainsboro;
+    width: 250px;
+    height: 250px;
+}
+
 .myprofile{
     display: flex;
     justify-content: space-between;
@@ -64,10 +78,11 @@ li a:hover{
     gap: 10px;
 }
 .profile-details #name {
-    font-size: xx-large;
+    font-size: 50px;
     color: white;
     text-transform: uppercase;
     line-height: 1.8;
+    letter-spacing: 0.1em;
 }
 .profile-details h3 {
     font-size: x-large;
@@ -96,31 +111,49 @@ li a:hover{
 }
 
 .git-projects{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
     
 }
 
 .projects{
-    text-align: center;
-    color: white;
-    background-color: white;
-    padding: 10px;
-    width: 200px;
-}
-
-.projects a {
-    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: black;
-    font-size: x-large;
+    background-color: #74ebd5;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6); 
+}
+.projects p {
+    border-top: 1px solid rgb(5, 105, 119);
+}
+.projects h2 {
+  
+    font-size: xx-large;
     font-weight: bold;
 }
+.projects a  {
 
-.git-projects img {
-    border-bottom: 2px solid orangered;
-    width: 200px;
-    height: 200px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid green;
+    background: green;
+}
+.projects:hover{
+    transform: scale(1.075);
+    transition: 1s;
+}
+
+
+
+.container > .git-projects {
+    background: #364d55;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 20px;
 }
 .contact-details{
     display: flex;
@@ -135,14 +168,14 @@ li a:hover{
     padding: 10px;
     font-size: x-large;
 }
-span i {
+.socialmedia > a > span > i {
     padding: 10px;
-    font-size: x-large;
+    font-size: 50px;
 }
 
 .socialmedia{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 .socialmedia a {
@@ -161,6 +194,15 @@ span i {
 }
 .contact {
     border: 2px solid orange;
+}
+
+.socialmedia > a:hover{
+    transform: scale(1.5);
+    transition: 1s;
+}
+.contact-details > a:hover{
+    transform: scale(1.075);
+    transition: 1s;
 }
 
 
@@ -185,6 +227,12 @@ span i {
 
     .contact-details{
         flex-direction: column;
+        align-items: flex-start;
     }
+
+    .git-projects {
+        grid-template-columns: repeat(1,1fr);
+    }
+    
     
 }
