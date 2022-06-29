@@ -63,7 +63,7 @@ li a:hover{
     align-items: flex-start;
     gap: 10px;
 }
-.profile-details {
+.profile-details #name {
     font-size: xx-large;
     color: white;
     text-transform: uppercase;
